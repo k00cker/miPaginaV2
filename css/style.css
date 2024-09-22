@@ -14,6 +14,32 @@ body {
 .navbar-brand img{
   border-radius: 50%;
 }
+
+
+.carousel-caption {
+  bottom: 20px; /* Asegura que las leyendas no se superpongan con los controles */
+  left: 15px;
+  right: 15px;
+  text-align: center;
+}
+
+.carousel-caption h3, .carousel-caption p {
+  font-size: 1.2rem; /* Ajusta el tamaño del texto en móviles */
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .carousel-caption h3 {
+    font-size: 1rem; /* Texto más pequeño para móviles */
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem; /* Ajustar el tamaño del texto en móviles */
+  }
+}
+
+
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -151,12 +177,41 @@ background: -webkit-linear-gradient(90deg, #223af7,#476af5,#9ca5cf);
   text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px purple, 0 0 20px purple, 0 0 25px purple, 0 0 30px purple;
 }
 
+.carousel-inner img {
+  width: 100%; /* Mantiene las imágenes al 100% del ancho del contenedor */
+  height: auto; /* Mantiene la proporción de las imágenes */
+  object-fit: cover; /* Asegura que las imágenes cubran todo el contenedor sin deformarse */
+}
+.carousel-control-prev, .carousel-control-next {
+  width: 5%; /* Ajustar el ancho de las flechas para que no se salgan en móviles */
+}
+
+@media (max-width: 768px) {
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 30px; /* Reducir el tamaño del icono de flechas en móviles */
+    width: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .carousel-inner {
+    height: 300px; /* Reducir la altura del carrusel en móviles */
+  }
+
+  .carousel-item img {
+    height: 300px; /* Ajustar la altura de las imágenes en móviles */
+  }
+}
+
+
+/*
 .carousel-innerg {
   height: auto;
 }
 .carousel-caption{
   height: 80vh; 
 }
+*/
+
 .contenecard{
   display: flex;
   padding: 10px;
@@ -367,5 +422,74 @@ transition: all .5s ease;
 
   .grid-container section {
     padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer {
+    flex-direction: column;
+    align-items: center; 
+    padding: 40px 0; 
+  }
+
+  .footer-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-link {
+    width: 100%; 
+    padding: 10px 0;
+    text-align: center; 
+  }
+
+  .footer-link h4 {
+    font-size: 18px; 
+    margin-bottom: 15px;
+  }
+
+  .footer-link ul li a {
+    font-size: 16px;
+  }
+
+  .social-link a {
+    min-height: 35px;
+    width: 35px;
+    line-height: 35px;
+    margin: 0 8px 8px 0; 
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center; 
+    padding: 30px 0; 
+  }
+
+  .footer-row {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .footer-link {
+    width: 100%; 
+    padding: 5px 0;
+    text-align: center;
+  }
+
+  .footer-link h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .footer-link ul li a {
+    font-size: 14px; 
+  }
+
+  .social-link a {
+    min-height: 30px;
+    width: 30px;
+    line-height: 30px;
+    margin: 0 6px 6px 0;
   }
 }

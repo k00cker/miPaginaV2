@@ -17,14 +17,14 @@ body {
 
 
 .carousel-caption {
-  bottom: 20px;
+  bottom: 20px; /* Asegura que las leyendas no se superpongan con los controles */
   left: 15px;
   right: 15px;
   text-align: center;
 }
 
 .carousel-caption h3, .carousel-caption p {
-  font-size: 1.2rem; 
+  font-size: 1.2rem; /* Ajusta el tamaño del texto en móviles */
   line-height: 1.4;
 }
 
@@ -34,7 +34,7 @@ body {
   }
 
   .carousel-caption p {
-    font-size: 0.9rem; 
+    font-size: 0.9rem; /* Ajustar el tamaño del texto en móviles */
   }
 }
 
@@ -183,7 +183,7 @@ background: -webkit-linear-gradient(90deg, #223af7,#476af5,#9ca5cf);
   object-fit: cover; 
 }
 .carousel-control-prev, .carousel-control-next {
-  width: 5%; 
+  width: 5%; /* Ajustar el ancho de las flechas para que no se salgan en móviles */
 }
 
 @media (max-width: 768px) {

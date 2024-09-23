@@ -15,16 +15,15 @@ body {
   border-radius: 50%;
 }
 
-
 .carousel-caption {
-  bottom: 20px; /* Asegura que las leyendas no se superpongan con los controles */
+  bottom: 300px; 
   left: 15px;
   right: 15px;
   text-align: center;
 }
 
 .carousel-caption h3, .carousel-caption p {
-  font-size: 1.2rem; /* Ajusta el tamaño del texto en móviles */
+  font-size: 1.8rem; 
   line-height: 1.4;
 }
 
@@ -34,12 +33,9 @@ body {
   }
 
   .carousel-caption p {
-    font-size: 0.9rem; /* Ajustar el tamaño del texto en móviles */
+    font-size: 0.9rem;
   }
 }
-
-
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);

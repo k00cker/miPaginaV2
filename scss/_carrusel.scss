@@ -1,0 +1,33 @@
+.carousel-caption {
+    bottom: 300px;
+    left: 15px;
+    right: 15px;
+    text-align: center;
+    h3,
+    p {
+      font-size: 3rem;
+      line-height: 1.4;
+      color: $mOscuro;
+      text-shadow: $sombraTexto;
+    }
+    h5 {
+      font-size: x-large;
+    }
+    p{
+  font-size: large;
+    }
+  }
+  
+  .carousel-inner {
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+  }
+  

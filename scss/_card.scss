@@ -1,0 +1,31 @@
+.contenecard {
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 20px;
+  
+    .card {
+      &:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+      }
+  
+      .card-header {
+        text-shadow: $sombra2;
+        text-align: right;
+        color: $white-color;
+  
+        img {
+          align-items: flex-start;
+        }
+      }
+  
+      .card-img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+  }

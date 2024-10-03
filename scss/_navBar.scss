@@ -1,0 +1,31 @@
+.navbar {
+    grid-area: navbar;
+    display: flex;
+    padding: 0.2rem;
+    justify-content: flex-end;
+  
+    ul {
+      list-style: none;
+  
+      li {
+        display: inline-block;
+        margin: 2px;
+        position: relative;
+        padding: 5px;
+  
+        a {
+          color: $mMedio;
+          text-decoration: none;
+  
+          &:hover {
+            color: $mSuave;
+            text-shadow: $sombraTexto2;
+          }
+        }
+      }
+    }
+  }
+  
+  .navbar-brand img {
+    border-radius: 50%;
+  }

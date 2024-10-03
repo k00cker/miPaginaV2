@@ -1,61 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../img/favicon/favicon.ico" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>GuiasGamer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../img/favicon/favicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>ArcadeZeroGuias</title>
 </head>
+
 <body>
-<div class="contenedor">
+  <div class="contenedor">
     <header class="header">
-        <img src="../img/logo.jpeg" alt="Logo_Arcadezero">
-        <h1>
-            🎮ArcadeZero🎮
-        </h1>
+      <img src="../img/logo.jpeg" alt="Logo_Arcadezero">
+      <h1>
+        🎮ArcadeZero🎮
+      </h1>
     </header>
-    <nav class="navbar navbar-expand-lg" style="background-color:rgb(9, 190, 67);">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown link
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <nav class="navbar navbar-expand-lg" style="background-image: url(../img/gradNavBar2.png)">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../img/favicon/favicon-32x32.png"
+            alt="logo joystick"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Secciones
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../pages/secciones.html">Secciones</a></li>
+                <li><a class="dropdown-item" href="../pages/secciones.html#xbox">Xbox</a></li>
+                <li><a class="dropdown-item" href="../pages/secciones.html#nintendo">Nintendo</a></li>
+                <li><a class="dropdown-item" href="../pages/secciones.html#playstation">PlayStation</a></li>
+                <li><a class="dropdown-item" href="../pages/secciones.html#steam">Steam</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/guias.html">Guias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/noticias.html">Noticias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="d-flex">
+      <!-- ASIDE -->
+      <aside class="p-3" style="width: 250px; background-image: url(../img/fondo2.jpg);">
+        <h2>Guías</h2>
+        <div class="accordion" id="accordionGuides">
+          <div class="accordion-item" style="background-color: rgb(151, 240, 172);">
+            <h2 class="accordion-header" id="headingXbox">
+              <button class="accordion-button"
+                style="background-image: url(../img/gradBox1.png);color: aliceblue; font-size: large;" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseXbox" aria-expanded="true"
+                aria-controls="collapseXbox">
+                Xbox
+              </button>
+            </h2>
+            <div id="collapseXbox" class="accordion-collapse collapse show" aria-labelledby="headingXbox"
+              data-bs-parent="#accordionGuides">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="../pages/guias.html#gears" style="text-decoration: none; color: inherit;">Gears 5</a>
+                  </li>
+                  <li><a href="../pages/guias.html#forza" style="text-decoration: none; color: inherit;">Forza 8</a>
+                  </li>
                 </ul>
-              </li>
-            </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" style="background-color: rgb(240, 158, 158);">
+            <h2 class="accordion-header" id="headingNintendo">
+              <button class="accordion-button collapsed"
+                style="background-image: url(../img/gradTendo1.png);color: aliceblue;font-size: large;" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseNintendo" aria-expanded="false"
+                aria-controls="collapseNintendo">
+                Nintendo
+              </button>
+            </h2>
+            <div id="collapseNintendo" class="accordion-collapse collapse" aria-labelledby="headingNintendo"
+              data-bs-parent="#accordionGuides">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="../pages/guias.html#zelda" style="text-decoration: none;color: inherit;">Zelda</a></li>
+                  <li><a href="../pages/guias.html#marioParty"
+                      style="text-decoration: none; color: inherit;">MarioParty</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" style="background-color: rgb(99, 161, 188);">
+            <h2 class="accordion-header" id="headingPlayStation">
+              <button class="accordion-button collapsed"
+                style="background-image: url(../img/gradStation1.png);color: aliceblue;font-size: large;" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapsePlayStation" aria-expanded="false"
+                aria-controls="collapsePlayStation">
+                PlayStation
+              </button>
+            </h2>
+            <div id="collapsePlayStation" class="accordion-collapse collapse" aria-labelledby="headingPlayStation"
+              data-bs-parent="#accordionGuides">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="../pages/guias.html#astro" style="text-decoration: none; color: inherit;">AstroBot</a>
+                  </li>
+                  <li><a href="../pages/guias.html#gowr" style="text-decoration: none; color: inherit;">God of War</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" style="background-color: rgb(133, 133, 145);">
+            <h2 class="accordion-header" id="headingSteam">
+              <button class="accordion-button collapsed" style="background-image: url(../img/gradPcCardGuias.png); color: aliceblue;font-size: large;" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseSteam" aria-expanded="false" aria-controls="collapseSteam">
+                Steam
+              </button>
+            </h2>
+            <div id="collapseSteam" class="accordion-collapse collapse" aria-labelledby="headingSteam"
+              data-bs-parent="#accordionGuides">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="../pages/guias.html#dota2" style="text-decoration: none;color: inherit;">Dota 2</a></li>
+                  <li><a href="../pages/guias.html#cs2" style="text-decoration: none;color: inherit;">CS 2</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
-<main>
+      </aside>
 
-</main>
-<footer>
+      <!-- CONTENIDO PRINCIPAL -->
+      <section class="p-3 flex-grow-1">
+        <h2 style="color: aliceblue; text-align: center;  ">Bienvenido a las Guías</h2>
+        <p style="color: aliceblue; text-align: center;">Aquí encontrarás todo el contenido de las guías disponibles
+          para Xbox, Nintendo, PlayStation y Steam.</p>
 
-</footer>
+        <div class="container">
+          <div class="row">
+            <!-- Fila 1 -->
 
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+            <div class="col-md-8" id="gears">
+              <div class="card">
+                <img src="../img/gear5CardGuias.png" class="card-img-top" alt="Guía Gears of War 5">
+                <div class="card-body">
+                  <h5 class="card-title">Gears of War 5</h5>
+                  <p class="card-text">
+                    La nueva entrega del shooter en tercera persona de Microsoft Games Studios para Xbox One y PC. En
+                    esta ocasión, la historia vuelve a narrar el conflicto entre la humanidad y el Enjambre, que vuelve
+                    a poner contra las cuerdas la supervivencia de la CGO y el resto de las personas que habitan el
+                    mundo.
+
+                    Pero más allá de eso, en Gears 5 se cuenta una historia personal, la de Kate Diaz, que sufre
+                    espantosas visiones del Enjambre que están afectando a su cordura.
+                    En varias secciones de esa campaña se rompe la linealidad señera de la saga y se nos permite navegar
+                    por amplios mundos abiertos montados en un esquife.
+                    En esos lugares tendremos cierta libertad no solo para explorar...
+                  </p>
+                  <a href="#gears" class="btn btn-primary">Ver más</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-4" id="forza">
+              <div class="card">
+                <img src="../img/forzaCardGuias2.jpg" class="card-img-top" alt="Guía Forza motorsport 8">
+                <div class="card-body">
+                  <h5 class="card-title">Forza MotorSport 8</h5>
+                  <p class="card-text">Érase una vez, cada dos años podías esperar un nuevo Forza Motorsport como un
+                    reloj. Pero el simulador de carreras de Turn 10 ha estado en una especie de pausa desde el
+                    lanzamiento de Forza Motorsport 7 en 2017. En el evento de exhibición de juegos Xbox Series X de
+                    Microsoft el 23 de julio de 2020, finalmente pudimos echar un vistazo a Forza Motorsport 8.</p>
+                  <a href="#forza" class="btn btn-primary">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fila 2 -->
+          <div class="row mt-3">
+            <div class="col-md-4" id="zelda">
+              <div class="card">
+                <img src="../img/zeldaCardGuia1.jpg" class="card-img-top" alt="Guía Zelda">
+                <div class="card-body">
+                  <h5 class="card-title">The Legend of Zelda™: Echoes of Wisdom</h5>
+                  <p class="card-text">¡Salva el reino de Hyrule con la sabiduría de la princesa Zelda!
+                    Los habitantes de Hyrule han estado desvaneciéndose por unas extrañas brechas, al igual que cierto
+                    espadachín, el rey de Hyrule y sus consejeros, entre otros. Sin otro recurso a su alcance, ¡la
+                    princesa Zelda deberá salvar a su reino en una nueva aventura de la serie de The Legend of Zelda™!
+
+                    Únete a un etéreo ser llamado Tri y usa el poder del cetro de Tri para aprender a crear réplicas (es
+                    decir, copias de los objetos que encuentres en el entorno). Después, utiliza esas réplicas para
+                    resolver desafíos o derrotar enemigos. Usa réplicas como bloques acuosos para alcanzar lugares
+                    altos, haz puentes con camas viejas, lanza piedras a los enemigos o encuentra tu...</p>
+                  <a href="#zelda" class="btn btn-primary">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8" id="marioParty">
+              <div class="card">
+                <img src="../img/mariopartyCardGuia.jpg" class="card-img-top" alt="Guía MarioParty">
+                <div class="card-body">
+                  <h5 class="card-title">Super Mario Party™ Jamboree</h5>
+                  <p class="card-text">¡Únete a una fiesta repleta de diversión con más minijuegos que cualquier otro
+                    juego de Mario Party™ a la fecha!
+                    Reúne a tus amigos, escoge un tablero y disfruta de una divertida fiesta al estilo de Mario. Escoge
+                    un personaje, tira algunos dados y compite en una variedad de minijuegos para ver quién consigue la
+                    mayor cantidad de estrellas. Desde competencias en un carrusel hasta partidas de minigolf que
+                    utilizan el control por movimiento*, ¡hay más de 110 minijuegos para disfrutar en siete tableros!...
+                  </p>
+                  <a href="#marioParty" class="btn btn-primary">Ver más</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Fila 3 -->
+          <div class="row mt-3">
+            <div class="col-md-8" id="astro">
+              <div class="card">
+                <img src="../img/astroBotGuia.jpg" class="card-img-top" alt="Guía AstroBot">
+                <div class="card-body">
+                  <h5 class="card-title">AstroBot</h5>
+                  <p class="card-text">¡Bienvenido a nuestra guía oficial de Astro Bot! El pequeño y juguetón robot de
+                    PlayStation Studios y Sony regresa en 2024 con su nueva y mayor aventura plataformera hasta el
+                    momento desarrollada por Team Asobi para consolas PS5. Un montón de planetas para visitar, mecánicas
+                    alucinantes, cameos marca de la casa y, en definitiva, diversión a raudales. Si estás listo para
+                    embarcarte en este viaje cósmico, te animamos a ojear a continuación nuestra guía completa del juego
+                    en la que repasamos asuntos importantes como el de lograr rescatar a todos los bots perdidos,
+                    obtener cada pieza de rompecabezas y muchos más secretos.
+                    Tu misión principal en Astro Bot es recuperar las partes esenciales de tu nave nodriza estropeada y,
+                    para ello, tendrás que recorrer diferentes galaxias o mundos llenos de niveles variopintos. En
+                    concreto, en esta aventura existen un total de 6 sistemas planetarios (además de un mundo base al
+                    que regresarás a menudo y un mundo final especial) y son todos los siguientes...
+                  </p>
+                  <a href="#astroBot" class="btn btn-primary">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4" id="gowr">
+              <div class="card">
+                <img src="../img/gowRagCardGuia.jpeg" class="card-img-top" alt="Guía God Of War">
+                <div class="card-body">
+                  <h5 class="card-title">God of War Ragnarok</h5>
+                  <p class="card-text">Inicio de la guíaBienvenidos a nuestra guía de God of War: Ragnarok. A lo largo
+                    de varias entradas cubriremos desde una paso a paso detallada, libre de spoilers y optimizada para
+                    completar tanto contenido secundario como sea posible mientras avanzas; así como guías individuales
+                    para todos los contenidos del juego...</p>
+                  <a href="#gowR" class="btn btn-primary">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fila 4-->
+          <div class="row mt-3">
+            <div class="col-md-4" id="dota2">
+              <div class="card">
+                <img src="../img/dotaCardGuias.jpg" class="card-img-top" alt="Guía Dota 2">
+                <div class="card-body">
+                  <h5 class="card-title">Dota 2</h5>
+                  <p class="card-text">A simple vista parece un juego fácil, pero aunque sea bastante intuitivo tiene su
+                    complejidad cuando se ponen en marcha las partidas de diferentes modalidades. En este caso, los
+                    equipos se dividen en dos, Los Dire y Los Radiant, compuestos cada uno por 5 Héroes de distintas
+                    características y habilidades. Obviamente, aquí influyen varios factores que se deben tener en
+                    cuenta para lograr que una estrategia funcione...</p>
+                  <a href="#dota2" class="btn btn-primary">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8" id="cs2">
+              <div class="card">
+                <img src="../img/counterCardGuia.jpg" class="card-img-top" alt="Guía Counter Strike 2">
+                <div class="card-body">
+                  <h5 class="card-title">Counter Strike 2</h5>
+                  <p class="card-text">Bienvenidos a nuestra guía de Counter-Strike 2, que después de mucho esperar, por
+                    fin está al alcance de todos los jugadores. A lo largo de esta guía, que iremos ampliando a medida
+                    que vayamos descubriendo todos los entresijos y novedades del juego, os daremos desde consejos para
+                    escoger armas hasta algo de ayuda para mejorar aspectos técnicos del juego, como la resolución o la
+                    tasa de imágenes por segundo (FPS).
+                    El primer paso para alzarte con la victoria es conocer las armas disponibles para enfrentarte al
+                    enemigo. En esta sección os mostraremos todas estas armas, además de daros recomendaciones sobre las
+                    mejores que hay a vuestro alcance.
+                  </p>
+                  <a href="#cs2" class="btn btn-primary">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <button id="scrollTopBtn" class="scroll-to-top" title="Subir">
+        <a href="../pages/guias.html"><img src="../img/favicon/favicon-32x32.png" style="border-radius: 50%;"
+            alt=""></a>
+      </button>
+    </main>
+
+
+    <footer class="footer">
+      <div class="footContenedor">
+        <div class="footer-row">
+          <div class="footer-link">
+            <h4>Compañia</h4>
+            <ul>
+              <li><a href="http://" target="_blank">Nosotros</a></li>
+              <li><a href="http://" target="_blank">Servicios</a></li>
+              <li><a href="http://" target="_blank">Politica de Privacidad</a></li>
+              <li><a href="http://" target="_blank">Unete</a></li>
+            </ul>
+          </div>
+          <div class="footer-link">
+            <h4>Ayuda</h4>
+            <ul>
+              <li><a href="http://" target="_blank">Preguntas</a></li>
+              <li><a href="http://" target="_blank">Mapa del Sitio</a></li>
+              <li><a href="http://" target="_blank">Comentarios</a></li>
+              <li><a href="http://" target="_blank">Cuentas ArcadeZero</a></li>
+            </ul>
+          </div>
+          <div class="footer-link">
+            <h4>Examinar</h4>
+            <ul>
+              <li><a href="http://" target="_blank">Sobre Xbox</a></li>
+              <li><a href="http://" target="_blank">Sobre Nintendo</a></li>
+              <li><a href="http://" target="_blank">Sobre Play PlayStation</a></li>
+              <li><a href="http://" target="_blank">Sobre Steam</a></li>
+            </ul>
+          </div>
+          <div class="footer-link">
+            <h4>Siguenos</h4>
+            <div class="social-link">
+              <a href="http://" target="_blank"> <i class="fab fa-facebook-f"></i></a>
+              <a href="http://" target="_blank"> <i class="fab fa-instagram"></i></a>
+              <a href="http://" target="_blank"> <i class="fab fa-twitter"></i></a>
+              <a href="http://" target="_blank"> <i class="fab fa-github"></i></a>
+            </div>
+
+
+
+          </div>
+        </div>
+    </footer>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
 </body>
+
 </html>

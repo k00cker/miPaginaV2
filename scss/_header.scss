@@ -1,0 +1,20 @@
+.header {
+    background-color: $mMedio;
+    padding: 0.8rem;
+    display: flex;
+    grid-area: header;
+    justify-content: center;
+    align-items: center;
+  
+    h1 {
+      color: $mOscuro;
+      text-shadow: $sombraTexto2;
+      padding: 10px;
+    }
+  
+    img {
+      width: 100px;
+      border-radius: 100%;
+      box-shadow: $sombraTexto2;
+    }
+  }

@@ -1,49 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/favicon/favicon.ico" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Contactanos</title>
+    <title>ArcadeZeroContacto</title>
 </head>
+
 <body>
-<div class="contenedor">
-    <header class="header">
-        <img src="../img/logo.jpeg" alt="Logo_Arcadezero">
-        <h1>
-            🎮ArcadeZero🎮
-        </h1>
-    </header>
-    <nav class="navbar">
-        <ul>
-            <li>
-                <a href="../index.html">Home</a>
-            </li>
-            <li>
-                <a href="../pages/noticias.html">Noticias</a>
-            </li>
-            <li>
-                <a href="../pages/secciones.html">Secciones</a>
-            </li>
-            <li>
-                <a href="../pages/guias.html">Guias</a>
-            </li>
-            <li>
-                <a href="../pages/contacto.html">Contacto</a>
-            </li>
-        </ul>
-    </nav>
-<main>
+    <div class="contenedor">
+        <header class="header">
+            <img src="../img/logo.jpeg" alt="Logo_Arcadezero">
+            <h1>
+                🎮ArcadeZero🎮
+            </h1>
+        </header>
+        <nav class="navbar navbar-expand-lg" style="background-image: url(../img/gradNavBar2.png)">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../img/favicon/favicon-32x32.png"
+                        alt="logo joystick"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Secciones
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../pages/secciones.html">Secciones</a></li>
+                                <li><a class="dropdown-item" href="../pages/secciones.html#xbox">Xbox</a></li>
+                                <li><a class="dropdown-item" href="../pages/secciones.html#nintendo">Nintendo</a></li>
+                                <li><a class="dropdown-item" href="../pages/secciones.html#playstation">PlayStation</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../pages/secciones.html#steam">Steam</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/guias.html">Guias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/noticias.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="contenePadre">
+            <section id="redes_sociales">
+                <h2>Síguenos</h2>
+                <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                            alt="Facebook" width="40" height="40">
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter"
+                            width="40" height="40">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+                            alt="Instagram" width="40" height="40">
+                    </a>
+                    <a href="https://github.com" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+                            alt="GitHub" width="40" height="40">
+                    </a>
+                </div>
+            </section>
 
-</main>
-<footer>
+            <section id="mapa">
+               <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d864.660902268786!2d-71.25917568586014!3d-29.903368122336698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9691cb6567d0709b%3A0xd0e3172f92a489fe!2sM%26G%20Coffe%20Shop!5e0!3m2!1sen!2scl!4v1727661473023!5m2!1sen!2scl"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+           
+            <section id="formulario">
+                <h2>Contactanos</h2>
+                <div id="after_submit"></div>
+                <form id="contact_form" action="mailto:" method="POST"
+                    enctype="multipart/form-data">
+                    <div class="row">
+                        <label class="required" for="name">Escribe Tu Nombre:</label><br />
+                        <input id="name" class="input" name="name" type="text" value="" size="30" required /><br />
+                        <span id="name_validation" class="error_message"></span>
+                    </div>
+                    <div class="row">
+                        <label class="required" for="surname">Tu Apellido:</label><br />
+                        <input id="surname" class="input" name="surname" type="text" value="" size="30"
+                            required /><br />
+                        <span id="surname_validation" class="error_message"></span>
+                    </div>
+                    <div class="row">
+                        <label class="required" for="phone">Telefono:</label><br />
+                        <input id="phone" class="input" name="phone" type="number" value="" size="15" required /><br />
+                        <span id="phone_validation" class="error_message"></span>
+                    </div>
+                    <div class="row">
+                        <label class="required" for="country">Select your country:</label><br />
+                        <select id="country" class="input" name="country" required>
+                            <option value="">-- Select a country --</option>
+                            <option value="usa">Chile</option>
+                            <option value="canada">Argentina</option>
+                            <option value="uk">Uruguay</option>
+                            <option value="australia">Paraguay</option>
+                            <option value="germany">Peru</option>
+                            <option value="france">Bolivia</option>
+                            <option value="spain">Brazil</option>
+                            <option value="italy">Colombia</option>
+                            <option value="brazil">Ecuador</option>
+                            <option value="india">Venezuela</option>
+                        </select><br />
+                        <span id="country_validation" class="error_message"></span>
+                    </div>
 
-</footer>
+                    <div class="row">
+                        <label class="required" for="city">ingresa tu ciudad:</label><br />
+                        <input id="city" class="input" name="city" type="text" value="" size="30" required /><br />
+                        <span id="city_validation" class="error_message"></span>
+                    </div>
+                    <div class="row">
+                        <label class="required" for="email">Tu Email:</label><br />
+                        <input id="email" class="input" name="email" type="email" value="" size="30" required /><br />
+                        <span id="email_validation" class="error_message"></span>
+                    </div>
+                    <div class="row">
+                        <label class="required" for="message">Escribenos:</label><br />
+                        <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+                        <span id="message_validation" class="error_message"></span>
+                    </div>
 
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+                    <input id="submit_button" type="submit" value="Enviar" />
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footContenedor">
+                <div class="footer-row">
+                    <div class="footer-link">
+                        <h4>Compañia</h4>
+                        <ul>
+                            <li><a href="http://" target="_blank">Nosotros</a></li>
+                            <li><a href="http://" target="_blank">Servicios</a></li>
+                            <li><a href="http://" target="_blank">Politica de Privacidad</a></li>
+                            <li><a href="http://" target="_blank">Unete</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link">
+                        <h4>Ayuda</h4>
+                        <ul>
+                            <li><a href="http://" target="_blank">Preguntas</a></li>
+                            <li><a href="http://" target="_blank">Mapa del Sitio</a></li>
+                            <li><a href="http://" target="_blank">Comentarios</a></li>
+                            <li><a href="http://" target="_blank">Cuentas ArcadeZero</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link">
+                        <h4>Examinar</h4>
+                        <ul>
+                            <li><a href="http://" target="_blank">Sobre Xbox</a></li>
+                            <li><a href="http://" target="_blank">Sobre Nintendo</a></li>
+                            <li><a href="http://" target="_blank">Sobre Play PlayStation</a></li>
+                            <li><a href="http://" target="_blank">Sobre Steam</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link">
+                        <h4>Siguenos</h4>
+                        <div class="social-link">
+                            <a href="http://" target="_blank"> <i class="fab fa-facebook-f"></i></a>
+                            <a href="http://" target="_blank"> <i class="fab fa-instagram"></i></a>
+                            <a href="http://" target="_blank"> <i class="fab fa-twitter"></i></a>
+                            <a href="http://" target="_blank"> <i class="fab fa-github"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+        </footer>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>

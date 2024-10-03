@@ -1,0 +1,66 @@
+#xbox {
+    background: $xbox-gradient;
+    background: $xboxGradient2;
+    grid-column: span 4;
+  }
+  
+  #xbox2 {
+    background: $xbox-gradient;
+    background: $xboxGradient2;
+    grid-column: span 2;
+  }
+  
+  #nintendo {
+    grid-column: span 3;
+    grid-row: span 4;
+    background: $nintendo-gradient;
+    background: $nintendoGradient2;
+  }
+  
+  #nintendo2 {
+    background: $nintendo-gradient;
+    background: $nintendoGradient2;
+    grid-column: span 3;
+    grid-row: span 4;
+  }
+  
+  #playstation {
+    grid-column: span 2;
+    background: $playstation-gradient;
+    background: $playstationGradiente2;
+  }
+  
+  #playstation2 {
+    grid-column: span 4;
+    background: $playstation-gradient;
+    background: $playstationGradiente2;
+  }
+  
+  #steam {
+    grid-column: span 3;
+    color: $white-color;
+    background: $steam-gradient;
+    background: $steamGradiente2;
+  }
+  
+  #steam2 {
+    grid-column: span 2;
+    color: $white-color;
+    background: $steam-gradient;
+    background: $steamGradiente2;
+  }
+  
+  #steam3 {
+    color: $white-color;
+    background: $steam-gradient;
+    background: $steamGradiente2;
+  }
+  
+  #steam3 p {
+    color: $white-color;
+  }
+  
+  .p-3 h2 {
+    color: $mMedio;
+    text-shadow: $sombraTexto2;
+  }

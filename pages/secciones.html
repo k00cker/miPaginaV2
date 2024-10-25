@@ -8,8 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="../css/style.css">
-    <title>ArcadeZeroSecciones</title>
+    <title>ArcadeZero | Secciones</title>
 </head>
 
 <body>
@@ -17,7 +18,7 @@
         <header class="header">
             <img src="../img/logo.jpeg" alt="Logo_Arcadezero">
             <h1>
-                🎮ArcadeZero🎮
+                🎮 ArcadeZero 🎮
             </h1>
         </header>
         <nav class="navbar navbar-expand-lg" style="background-image: url(../img/gradNavBar2.png)">
@@ -62,44 +63,103 @@
             </div>
         </nav>
         <main class="grid-container">
-            <section id="xbox">
+            <section id="xbox" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
                 <h2 style="font-size:x-large; text-align: end;">XBOX</h2>
                 <img src="../img/xboxBanSec1.png" class="d-md-block w-100" alt="Imagen Xbox">
 
-                <p>Xbox es una línea de consolas de videojuegos creada por Microsoft, cuyo
-                    debut se dio en noviembre de 2001 con el lanzamiento de la Xbox original. Esta consola marcó la
-                    entrada de Microsoft en el mercado del hardware de videojuegos, dominado hasta entonces por Sony y
-                    Nintendo. Xbox fue un intento ambicioso de llevar la tecnología de los videojuegos a un nuevo nivel,
-                    destacándose por ser la primera consola en incluir un disco duro interno y popularizar el juego en
-                    línea a través de su servicio Xbox Live. Con títulos icónicos como Halo: Combat Evolved, la marca
-                    rápidamente capturó la atención de los gamers.
-                    <br>
-                    En 2005, Microsoft lanzó su sucesora, la Xbox 360, que supuso un avance significativo en términos de
-                    potencia gráfica, funcionalidad en línea y experiencia del usuario. La 360 popularizó el juego en
-                    línea competitivo y social a través de Xbox Live, expandiendo su plataforma digital con descargas de
-                    juegos, aplicaciones de entretenimiento y contenido multimedia. Sin embargo, esta consola no estuvo
-                    exenta de problemas, como el famoso "anillo rojo de la muerte", un error técnico que afectó a un
-                    gran número de unidades, pero que no impidió que se convirtiera en una de las consolas más exitosas
-                    de la historia...
+                <p>
+                    La historia de Xbox se puede resumir de la siguiente manera:
+                    La primera Xbox fue la primera consola de videojuegos de Microsoft y salió a la venta en 2001.
+                    La Xbox fue diseñada para competir con la PlayStation 2 de Sony y la Nintendo GameCube.
+                    El título de lanzamiento de Xbox fue Halo: Combat Evolved, que fue el éxito que la consola
+                    necesitaba para hacerse un lugar en el mercado.
+                    La segunda consola de Microsoft fue la Xbox 360, que se lanzó en 2005 y se convirtió en la consola
+                    Xbox más vendida, con más de 84 millones de unidades vendidas.
+                    La Xbox One fue la tercera generación de consolas de Microsoft y se lanzó en 2013. Microsoft anunció
+                    en 2022 que descontinuaba todos los modelos de la Xbox One a nivel internacional.
+                    La Xbox Series X/S fue lanzada en 2020 y hasta la fecha ha vendido más de 20 millones de consolas.
+                    En total, ha habido nueve consolas Xbox en cuatro generaciones distintas.
                 </p>
-                <a href="#xboxHistoria" class="btn btn-warning">Ver más</a>
+                <a href="#xboxHistoria" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#xboxModal">Ver
+                    más</a>
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="xboxModal" tabindex="-1" aria-labelledby="xboxModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- Header con degradado oscuro -->
+                            <div class="modal-header" style="background: linear-gradient(to right, #004d00, #006600);">
+                                <h5 class="modal-title" id="xboxModalLabel" style="color: white;">Historia de Xbox</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                    style="filter: brightness(0) invert(1);"></button>
+                            </div>
+                            <!-- Body con verde claro -->
+                            <div class="modal-body" style="background: linear-gradient(to bottom, #046a04, #415741);">
+                                <p>
+                                    Xbox es una línea de consolas de videojuegos creada por Microsoft, cuyo debut se dio
+                                    en noviembre de 2001 con el lanzamiento de la Xbox original...
+                                </p>
+                                <p>
+                                    En 2005, Microsoft lanzó su sucesora, la Xbox 360, que supuso un avance
+                                    significativo en términos de potencia gráfica, funcionalidad en línea y experiencia
+                                    del usuario...
+                                </p>
+                            </div>
+                            <!-- Footer con degradado oscuro -->
+                            <div class="modal-footer" style="background: linear-gradient(to right, #004d00, #006600);">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </section>
-            <section id="xbox2">
+            <section id="xbox2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
                 <h2 style="font-size: x-large; text-align: end;">GAME PASS</h2>
                 <img src="../img/xboxCard2Sec.jpg" alt="Imagen Xbox">
                 <p>Xbox Game Pass es un servicio de suscripción de videojuegos lanzado por Microsoft en 2017, diseñado
                     para ofrecer a los jugadores acceso a una amplia biblioteca de juegos por una tarifa mensual. La
-                    idea detrás de Game Pass era similar a los servicios de streaming de video como Netflix, pero
-                    enfocado en videojuegos. Los suscriptores tienen acceso a una lista rotativa de cientos de títulos
-                    que pueden descargar y jugar en sus consolas Xbox, PC con Windows y más recientemente, en
-                    dispositivos móviles mediante la tecnología de juego en la nube. Este modelo de negocio ha
-                    revolucionado la forma en que los jugadores acceden a los videojuegos, permitiendo una mayor
-                    flexibilidad y un valor excepcional en términos de costo-beneficio...</p>
-                <a href="#gamePass" class="btn btn-warning">Ver más</a>
+                    idea detrás de Game Pass era similar a los servicios de streaming de video como Netflix,...</p>
+                <a href="#gamePass" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#gpassModal">Ver
+                    más</a>
+                <div class="modal fade" id="gpassModal" tabindex="-1" aria-labelledby="gpassModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <div class="modal-header" style="background: linear-gradient(to right, #004d00, #006600);">
+                                <h5 class="modal-title" id="gpassModalLabel" style="color: white;">GAME PASS</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                    style="filter: brightness(0) invert(1);"></button>
+                            </div>
+
+                            <div class="modal-body" style="background: linear-gradient(to bottom, #046a04, #415741);">
+                                <p>
+                                    Game Pass es un servicio para acceder a un centenar de videojuegos a cambio de una
+                                    suscripción mensual. Tú pagas la cuota cada mes, y a cambio tienes la posibilidad de
+                                    descargar gratis una gran cantidad de videojuegos. A estos los podrás jugar durante
+                                    todo el tiempo que quieras, siempre y cuando siguas pagando la suscripción.
+
+                                    Podríamos decir que Xbox GamePass es, por lo tanto, una especie de Netflix de los
+                                    videojuegos. La diferencia es que los juegos vas a necesitar tenerlos físicamente
+                                    instalados en el ordenador, aunque uno de los tres tipos de suscripción también
+                                    soporta el Cloud Gaming, la posibilidad de jugar en la nube desde casi cualquier
+                                    dispositivo sin instalar nada, incluyendo el teléfono móvil.
+                                </p>
+                            </div>
+
+                            <div class="modal-footer" style="background: linear-gradient(to right, #004d00, #006600);">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
 
-            <section id="nintendo">
+            <section id="nintendo" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
                 <img src="../img/logoNintendo1.png" style="height: 50px; width: 180px;">
                 <img src="../img/nintendoBox1.jpg" alt="Imagen Nintendo">
                 <h3 style="color: aliceblue; font-size: x-large;">Reseña</h3>
@@ -110,9 +170,43 @@
                     Entertainment System (NES), lanzada en 1983 en Japón y 1985 en América. Esta consola revolucionó la
                     industria de los videojuegos tras la crisis de 1983, con franquicias legendarias como Super Mario
                     Bros. y The Legend of Zelda...</p>
-                <a href="#historiaNintendo" class="btn btn-warning">Ver más</a>
+
+                <a href="#historiaNintendo" class="btn btn-warning" data-bs-toggle="modal"
+                    data-bs-target="#nintendo1Modal">Ver más</a>
+                <div class="modal fade" id="nintendo1Modal" tabindex="-1" aria-labelledby="nintendo1ModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- Header con degradado oscuro -->
+                            <div class="modal-header" style="background: linear-gradient(to right, #740101, #be3f3f);">
+                                <h5 class="modal-title" id="nintendo1ModalLabel" style="color: white;">RESEÑA</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                    style="filter: brightness(0) invert(1);"></button>
+                            </div>
+                            <!-- Body con verde claro -->
+                            <div class="modal-body" style="background: linear-gradient(to bottom, #d44141, #640f19);">
+                                <p>
+                                    Nintendo fue fundada en 1889 por Fusajiro Yamauchi como fabricante de hanafuda, un
+                                    tipo de naipes japoneses que se usan para diversos juegos de cartas. En 1882, el
+                                    gobierno japonés había prohibido los juegos de apuestas “para promover una ética del
+                                    trabajo”: las hanafuda, que se usaban mayoritariamente como pasatiempo, estaban
+                                    entre las pocas cosas relacionadas con el juego que seguían permitidas, aunque
+                                    muchos fabricantes decidieron retirarse cuando la yakuza (la mafia japonesa) se hizo
+                                    con el control de los locales de juego.
+                                </p>
+
+                            </div>
+                            <!-- Footer con degradado oscuro -->
+                            <div class="modal-footer" style="background: linear-gradient(to right, #740101, #be3f3f);">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </section>
-            <section id="nintendo2">
+            <section id="nintendo2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
                 <h2>Principales Juegos</h2>
                 <img src="../img/nintendoBox2.jpg" alt="Imagen Nintendo">
                 <h3 style="color: aliceblue; font-size: x-large;">Super Mario</h3>
@@ -131,10 +225,40 @@
                     of the Wild, en particular, redefinió el concepto de mundo abierto y se considera uno de los mejores
                     videojuegos de todos los tiempos...
                 </p>
-                <a href="#juegos" class="btn btn-warning">Ver más</a>
+                <a href="#juegos" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#nintendo2Modal">Ver
+                    más</a>
+                <div class="modal fade" id="nintendo2Modal" tabindex="-1" aria-labelledby="nintendo2ModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- Header con degradado oscuro -->
+                            <div class="modal-header" style="background: linear-gradient(to right, #740101, #be3f3f);">
+                                <h5 class="modal-title" id="nintendo2ModalLabel" style="color: white;">Principales
+                                    Juegos</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                    style="filter: brightness(0) invert(1);"></button>
+                            </div>
+                            <!-- Body con verde claro -->
+                            <div class="modal-body" style="background: linear-gradient(to bottom, #d44141, #640f19);">
+                                <h4 style="color: aliceblue;">Mario Kart 8</h4>
+                                <p>
+                                    Se trata de un título que originalmente lanzado para la consola Wii U en 2014 y que
+                                    luego llegó en una versión mejorada para la Nintendo Switch. Mario Kart 8 Deluxe se
+                                    convirtió en el videojuego más vendido en la historia de Nintendo, con ventas que
+                                    ascienden a 61,97 millones de unidades.
+                                </p>
+
+                            </div>
+                            <!-- Footer con degradado oscuro -->
+                            <div class="modal-footer" style="background: linear-gradient(to right, #740101, #be3f3f);">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
-            <section id="playstation">
+            <section id="playstation" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
                 <h2>PlayStation</h2>
                 <img src="../img/logoPSblanco.png" class="d-md-block w-60" alt="Imagen PlayStation">
                 <h3 style="color: aliceblue;">Reseña</h3>
@@ -146,43 +270,245 @@
                     Final Fantasy VII, Metal Gear Solid y Crash Bandicoot definieron una era, elevando la calidad
                     narrativa y cinematográfica de los videojuegos, consolidando a PlayStation como una marca para
                     jugadores más maduros.</p>
-                    <a href="#historiaPs" class="btn btn-warning">Ver más</a>
+                <a href="#historiaPs" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#ps1Modal">Ver
+                    más</a>
+                <div class="modal fade" id="ps1Modal" tabindex="-1" aria-labelledby="ps1ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- Header modal-->
+                            <div class="modal-header" style="background: linear-gradient(to right, #2202d8, #0a0150);">
+                                <h5 class="modal-title" id="ps1ModalLabel" style="color: white;">RESEÑA</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                    style="filter: brightness(0) invert(1);"></button>
+                            </div>
+
+                            <div class="modal-body" style="background: linear-gradient(to bottom, #010c80, #2542e9);">
+                                <p>
+                                    Sony comenzó a desarrollar la PlayStation después de un acuerdo fallido con Nintendo
+                                    para crear un periférico de CD-ROM para Super Nintendo Entertainment System a
+                                    principios de la década de 1990. La consola fue diseñada principalmente por Ken
+                                    Kutaragi y Sony Computer Entertainment en Japón, mientras que el desarrollo
+                                    adicional se subcontrató en el Reino Unido. Se puso énfasis en los gráficos de
+                                    polígonos en tercera dimensión al frente del diseño de la consola. La producción de
+                                    juegos de PlayStation fue diseñada para ser optimizada e inclusiva, atrayendo el
+                                    apoyo de muchos desarrolladores externos.
+                                </p>
+
+                            </div>
+                            <!-- Footer Modal -->
+                            <div class="modal-footer" style="background: linear-gradient(to right, #2202d8, #0a0150);">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </section>
-            <section id="playstation2">
+            <section id="playstation2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
                 <h2>Sus Mejores Titulos!</h2>
                 <img src="../img/GOWRG.jpg" class="d-md-block w-80" alt="Imagen PlayStation">
                 <p>
                     The Last of Us
                     Plataformas: PlayStation 3, PlayStation 4, PlayStation 5 (remasterizado)
-                    Descripción: The Last of Us es una obra maestra de la narrativa en videojuegos, desarrollada por Naughty Dog. Ambientado en un mundo postapocalíptico, sigue la emotiva historia de Joel y Ellie mientras sobreviven a horrores tanto humanos como infectados. Su secuela, The Last of Us Part II, también ha sido ampliamente elogiada, ganando múltiples premios por su historia madura y jugabilidad.
+                    Descripción: The Last of Us es una obra maestra de la narrativa en videojuegos, desarrollada por
+                    Naughty Dog. Ambientado en un mundo postapocalíptico, sigue la emotiva historia de Joel y Ellie
+                    mientras sobreviven a horrores tanto humanos como infectados. Su secuela, The Last of Us Part II,
+                    también ha sido ampliamente elogiada, ganando múltiples premios por su historia madura y
+                    jugabilidad.
                     God of War (2018)
                 </p>
                 <p>
                     Plataformas: PlayStation 4, PlayStation 5
-                    Descripción: Kratos, el espartano furioso, regresó en 2018 en una nueva dirección para la serie. Este título reinventó la franquicia con un enfoque más profundo en la narrativa y el desarrollo de personajes, mientras introducía a su hijo, Atreus, en una historia ambientada en la mitología nórdica. La jugabilidad, las impresionantes visuales y la emotiva trama lo convirtieron en uno de los mejores juegos de la generación.</p>
-                    <a href="#mejoresPs" class="btn btn-warning">Ver más</a>
+                    Descripción: Kratos, el espartano furioso, regresó en 2018 en una nueva dirección para la serie.
+                    Este título reinventó la franquicia con un enfoque más profundo en la narrativa y el desarrollo de
+                    personajes, mientras introducía a su hijo, Atreus, en una historia ambientada en la mitología
+                    nórdica. La jugabilidad, las impresionantes visuales y la emotiva trama lo convirtieron en uno de
+                    los mejores juegos de la generación.</p>
+                <a href="#mejoresPs" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#ps2Modal">Ver
+                    más</a>
+                <div class="modal fade" id="ps2Modal" tabindex="-1" aria-labelledby="ps2ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- Header modal-->
+                            <div class="modal-header" style="background: linear-gradient(to right, #2202d8, #0a0150);">
+                                <h5 class="modal-title" id="ps2ModalLabel" style="color: white;">Mejores Juegos</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                    style="filter: brightness(0) invert(1);"></button>
+                            </div>
+
+                            <div class="modal-body" style="background: linear-gradient(to bottom, #010c80, #2542e9);">
+                                <p>
+                                    Algunos juegos populares para PlayStation son:
+                                    Marvel's Spider-Man 2
+                                    Este juego para PlayStation 5 está ambientado en la versión de Marvel de Nueva York
+                                    y permite controlar a los hombres araña Miles Morales y Peter Parker.
+                                    Marvel's Spider-Man: Miles Morales
+                                    La continuación de Marvel's Spider-Man (2018), este juego ofrece una historia de
+                                    madurez y un intenso combate.
+                                    Gran Turismo 7
+                                    Uno de los juegos que se han popularizado entre los jugadores de PlayStation 5.
+                                    Final Fantasy 16
+                                    Uno de los juegos que se han popularizado entre los jugadores de PlayStation 5.
+                                    Valkyrie Elysium
+                                    Uno de los juegos que se han popularizado entre los jugadores de PlayStation 5.
+                                </p>
+
+                            </div>
+                            <!-- Footer Modal -->
+                            <div class="modal-footer" style="background: linear-gradient(to right, #2202d8, #0a0150);">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
-            <section id="steam">
+            <section id="steam" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                 <h2>Steam y Pc</h2>
                 <img src="../img/steamBox1.jpg" alt="Imagen Steam">
-                <p>La historia de los juegos de PC se remonta a la década de 1970, cuando los primeros sistemas informáticos comenzaron a ser accesibles al público. Uno de los primeros juegos de computadora fue *Pong*, desarrollado por Atari en 1972, pero fue el lanzamiento de *Adventure* en 1976 para la consola Atari 2600 y el juego de texto *Zork* en 1980 lo que sentó las bases de lo que serían los juegos de aventura en la computadora. Durante los años 80, los sistemas como el IBM PC y la Commodore 64 se convirtieron en plataformas populares, y el mercado de los videojuegos comenzó a expandirse con la aparición de géneros como plataformas, shooters y juegos de estrategia.</p>
-                <a href="#steam" class="btn btn-warning">Ver más</a>
+                <p>La historia de los juegos de PC se remonta a la década de 1970, cuando los primeros sistemas
+                    informáticos comenzaron a ser accesibles al público. Uno de los primeros juegos de computadora fue
+                    *Pong*, desarrollado por Atari en 1972, pero fue el lanzamiento de *Adventure* en 1976 para la
+                    consola Atari 2600 y el juego de texto *Zork* en 1980 lo que sentó las bases de lo que serían los
+                    juegos de aventura en la computadora. Durante los años 80, los sistemas como el IBM PC y la
+                    Commodore 64 se convirtieron en plataformas populares, y el mercado de los videojuegos comenzó a
+                    expandirse con la aparición de géneros como plataformas, shooters y juegos de estrategia.</p>
+                <a href="#steam" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#steam1Modal">Ver
+                    más</a>
+                <div class="modal fade" id="steam1Modal" tabindex="-1" aria-labelledby="steam1ModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- Header modal-->
+                            <div class="modal-header" style="background: linear-gradient(to right, #16151b, #272728);">
+                                <h5 class="modal-title" id="steam1ModalLabel" style="color: white;">Reseña PC!</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                    style="filter: brightness(0) invert(1);"></button>
+                            </div>
+
+                            <div class="modal-body"
+                                style="background: linear-gradient(to bottom, rgb(85, 85, 86), #0b0d19);">
+                                <p>
+                                    Desde el brillo tenue de los monitores en los años 70 hasta los espectáculos
+                                    visuales de alta definición de la actualidad, el mundo del PC Gaming ha recorrido un
+                                    largo y emocionante camino. Esta travesía no solo ha sido una aventura tecnológica,
+                                    sino también una narrativa de cómo los videojuegos han evolucionado, conquistando
+                                    los corazones de grandes y pequeños.
+
+                                    Aunque muchas personas no lo sepan, el PC en sus primeras décadas nunca se tuvo en
+                                    cuenta su uso para jugar, sino en operaciones matemáticas y posteriormente en
+                                    recopilación de datos. Aún así, el avance de los juegos en PC y en consolas han ido
+                                    prácticamente de la mano cronológicamente hablando. Mientras que consolas como la
+                                    Magnavox Odyssey veían la luz en 1972 y dejaban claro su propósito y función, jugar
+                                    en PC era algo que la gente habitual no veía sentido.
+                                </p>
+
+                            </div>
+                            <!-- Footer Modal -->
+                            <div class="modal-footer" style="background: linear-gradient(to right, #16151b, #272728);">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section id="steam2">
+            <section id="steam2" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
                 <h2>Pc Gamer</h2>
                 <img src="../img/steamBox2.jpg" alt="Imagen Steam">
                 <p>
-                    Con la llegada de los 90, los juegos de PC experimentaron un gran avance técnico, gracias al aumento de la potencia de procesamiento y los gráficos en 3D. Títulos icónicos como *Doom* (1993) y *Warcraft: Orcs & Humans* (1994) no solo definieron sus respectivos géneros, sino que también popularizaron el juego en red a través de LAN y posteriormente por Internet. Durante esta época, el género de los juegos de rol (RPG) también comenzó a ganar popularidad, con títulos como *Baldur's Gate* (1998) que ofrecieron experiencias narrativas profundas y opciones de personalización de personajes.</p>
-                    <a href="#steam2" class="btn btn-warning">Ver más</a>
+                    Con la llegada de los 90, los juegos de PC experimentaron un gran avance técnico, gracias al aumento
+                    de la potencia de procesamiento y los gráficos en 3D. Títulos icónicos como *Doom* (1993) y
+                    *Warcraft: Orcs & Humans* (1994) no solo definieron sus respectivos géneros, sino que también
+                    popularizaron el juego en red a través de LAN y posteriormente por Internet. Durante esta época, el
+                    género de los juegos de rol (RPG) también comenzó a ganar popularidad, con títulos como *Baldur's
+                    Gate* (1998) que ofrecieron experiencias narrativas profundas y opciones de personalización de
+                    personajes.</p>
+                <a href="#steam2" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#steam2Modal">Ver
+                    más</a>
+                <div class="modal fade" id="steam2Modal" tabindex="-1" aria-labelledby="steam2ModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- Header modal-->
+                            <div class="modal-header" style="background: linear-gradient(to right, #16151b, #272728);">
+                                <h5 class="modal-title" id="steam2ModalLabel" style="color: white;">Los 90´s! y sus
+                                    mejoras</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                    style="filter: brightness(0) invert(1);"></button>
+                            </div>
+
+                            <div class="modal-body"
+                                style="background: linear-gradient(to bottom, rgb(85, 85, 86), #0b0d19);">
+                                <p>
+                                    Los 90 fueron una época dorada para el PC Gaming. Durante este período, surgieron
+                                    empresas como Blizzard Entertainment y Valve, que marcaron hitos con títulos como
+                                    “Warcraft”, “StarCraft” y “Half-Life”. Los juegos no solo mejoraban gráficamente,
+                                    sino que también ofrecían historias más ricas y jugabilidad más compleja. Fue
+                                    también en esta década cuando los jugadores empezaron a reunirse en redes locales
+                                    (LAN) para competir, dando inicio a lo que hoy conocemos como e-sports, o eSports
+                                    (deportes electrónicos). El mayor exponente de la historia es sin duda alguna
+                                    Counter Strike, lanzado en 1999 y vigente hasta la actualidad.
+                                </p>
+
+                            </div>
+                            <!-- Footer Modal -->
+                            <div class="modal-footer" style="background: linear-gradient(to right, #16151b, #272728);">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section id="steam3">
+            <section id="steam3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                 <h2>Mejores Juegos</h2>
                 <img src="../img/steamBox3.jpg" alt="Imagen Steam">
                 <h3>Warcraft / Dota / CSGO</h3>
                 <p>
-                    A partir de 2000, los juegos de PC se diversificaron aún más, con la aparición de plataformas de distribución digital como Steam en 2003, que facilitó el acceso a una amplia biblioteca de juegos. Los juegos multijugador masivos en línea (MMO), como *World of Warcraft* (2004), también revolucionaron...</p>
-                    <a href="#steam3" class="btn btn-warning">Ver más</a>
+                    A partir de 2000, los juegos de PC se diversificaron aún más, con la aparición de plataformas de
+                    distribución digital como Steam en 2003, que facilitó el acceso a una amplia biblioteca de juegos.
+                    Los juegos multijugador masivos en línea (MMO), como *World of Warcraft* (2004), también
+                    revolucionaron...</p>
+                <a href="#steam3" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#steam3Modal">Ver
+                    más</a>
+                <div class="modal fade" id="steam3Modal" tabindex="-1" aria-labelledby="steam3ModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- Header modal-->
+                            <div class="modal-header" style="background: linear-gradient(to right, #16151b, #272728);">
+                                <h5 class="modal-title" id="steam3ModalLabel" style="color: white;">Llega la Era Online!
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                    style="filter: brightness(0) invert(1);"></button>
+                            </div>
+
+                            <div class="modal-body"
+                                style="background: linear-gradient(to bottom, rgb(85, 85, 86), #0b0d19);">
+                                <p>
+                                    En el año 2000, el panorama del PC Gaming dio un salto cualitativo con la llegada de
+                                    las tarjetas gráficas 3D avanzadas y la expansión del internet de banda ancha.
+                                    Juegos como “Lineage 2” o “World of Warcraft” no solo ofrecieron experiencias
+                                    inmersivas, sino que también fomentaron una creciente comunidad online.
+
+                                    Una de las personas que ha dejado una huella imborrable en esta era es John Carmack,
+                                    cuyo trabajo en la creación de motores gráficos avanzados ha permitido que los
+                                    juegos alcancen niveles de realismo sorprendentes. Sus contribuciones en “Doom” y
+                                    “Quake” sentaron las bases para el desarrollo de juegos en primera persona.
+
+                                    Con el paso de los años, el PC Gaming ha continuado evolucionando, ofreciendo ahora
+                                    experiencias que una vez fueron consideradas imposibles. La realidad virtual y la
+                                    realidad aumentada son testamentos de cómo este medio continúa empujando los límites
+                                    de lo que podemos imaginar.
+                                </p>
+
+                            </div>
+                            <!-- Footer Modal -->
+                            <div class="modal-footer" style="background: linear-gradient(to right, #16151b, #272728);">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <button id="scrollTopBtn" class="scroll-to-top" title="Subir">
@@ -191,43 +517,44 @@
             </button>
         </main>
 
-        <footer class="footer">
+        <footer class="footer"
+            style="background-image: url(../img/steamSFgg.png);background-repeat: no-repeat;background-size:100%;">
             <div class="footContenedor">
                 <div class="footer-row">
                     <div class="footer-link">
                         <h4>Compañia</h4>
                         <ul>
-                            <li><a href="http://" target="_blank">Nosotros</a></li>
-                            <li><a href="http://" target="_blank">Servicios</a></li>
-                            <li><a href="http://" target="_blank">Politica de Privacidad</a></li>
-                            <li><a href="http://" target="_blank">Unete</a></li>
+                            <li><a href="../pages/enConstruccion.html">Nosotros</a></li>
+                            <li><a href="../pages/enConstruccion.html">Servicios</a></li>
+                            <li><a href="../pages/enConstruccion.html">Politica de Privacidad</a></li>
+                            <li><a href="../pages/enConstruccion.html">Unete</a></li>
                         </ul>
                     </div>
                     <div class="footer-link">
                         <h4>Ayuda</h4>
                         <ul>
-                            <li><a href="http://" target="_blank">Preguntas</a></li>
-                            <li><a href="http://" target="_blank">Mapa del Sitio</a></li>
-                            <li><a href="http://" target="_blank">Comentarios</a></li>
-                            <li><a href="http://" target="_blank">Cuentas ArcadeZero</a></li>
+                            <li><a href="../pages/enConstruccion.html">Preguntas</a></li>
+                            <li><a href="../pages/enConstruccion.html">Mapa del Sitio</a></li>
+                            <li><a href="../pages/enConstruccion.html">Comentarios</a></li>
+                            <li><a href="../pages/enConstruccion.html">Cuentas ArcadeZero</a></li>
                         </ul>
                     </div>
                     <div class="footer-link">
                         <h4>Examinar</h4>
                         <ul>
-                            <li><a href="http://" target="_blank">Sobre Xbox</a></li>
-                            <li><a href="http://" target="_blank">Sobre Nintendo</a></li>
-                            <li><a href="http://" target="_blank">Sobre Play PlayStation</a></li>
-                            <li><a href="http://" target="_blank">Sobre Steam</a></li>
+                            <li><a href="../pages/enConstruccion.html">Sobre Xbox</a></li>
+                            <li><a href="../pages/enConstruccion.html">Sobre Nintendo</a></li>
+                            <li><a href="../pages/enConstruccion.html">Sobre Play PlayStation</a></li>
+                            <li><a href="../pages/enConstruccion.html">Sobre Steam</a></li>
                         </ul>
                     </div>
                     <div class="footer-link">
                         <h4>Siguenos</h4>
                         <div class="social-link">
-                            <a href="http://" target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                            <a href="http://" target="_blank"> <i class="fab fa-instagram"></i></a>
-                            <a href="http://" target="_blank"> <i class="fab fa-twitter"></i></a>
-                            <a href="http://" target="_blank"> <i class="fab fa-github"></i></a>
+                            <a href="https://www.facebook.com" target="_blank"> <i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com" target="_blank"> <i class="fab fa-instagram"></i></a>
+                            <a href="https://www.twitter.com" target="_blank"> <i class="fab fa-twitter"></i></a>
+                            <a href="https://github.com" target="_blank"> <i class="fab fa-github"></i></a>
                         </div>
 
                     </div>
@@ -238,6 +565,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 
 </body>
 

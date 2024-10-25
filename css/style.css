@@ -590,6 +590,11 @@ h2 {
     height: auto;
   }
 }
+@media (min-width: 768px) {
+  aside {
+    width: 500px;
+  }
+}
 @keyframes slideInLeft {
   from {
     transform: translateX(-100%);
